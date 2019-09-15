@@ -219,5 +219,10 @@
             </Pane>
          </children>
       </HBox>
+      <Button fx:id="random" layoutX="599.0" layoutY="262.0" mnemonicParsing="false" onAction="#randomObject" prefHeight="60.0" prefWidth="58.0" text="Random">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

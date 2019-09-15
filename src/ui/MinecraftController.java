@@ -7,7 +7,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BackgroundPosition;
+import javafx.scene.layout.BackgroundRepeat;
+import javafx.scene.layout.BackgroundSize;
 
 public class MinecraftController {
 
@@ -78,13 +84,22 @@ public class MinecraftController {
     private Button nextInventory;
 
     @FXML
+    private Button random;
+
+    @FXML
     void nextInventory(ActionEvent event) {
+
+    }
+
+    @FXML
+    void randomObject(ActionEvent event) {
 
     }
     
     @FXML
     void initialize() {
-       
+    	Image img = new Image("ui/Lucky.png");
+        random.setBackground(new Background(new BackgroundImage(img, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(58, 60, false, false, false, true))));
     }
 }
 
