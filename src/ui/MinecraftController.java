@@ -101,21 +101,24 @@ public class MinecraftController {
     void randomObject(ActionEvent event) {
     	Random r = new Random();
     	int key = r.nextInt(6)+1;
-    	Cube newCube;
+    	int value = r.nextInt(2000)+1;
+    	
+    	Block<Integer, String> hashTable = new Block<Integer, String>();
+    	
     	if(key == 1) {
-    		newCube = new Cube(key, "Wood");
+    		hashTable.insert(key, "Wood "+value);
     	}else if(key == 2) {
-    		newCube = new Cube(key, "Glass");
+    		hashTable.insert(key, "Glass "+value);
     	}else if(key == 3) {
-    		newCube = new Cube(key, "Gold");
+    		hashTable.insert(key, "Gold "+value);
     	}else if(key == 4) {
-    		newCube = new Cube(key, "Magma");
+    		hashTable.insert(key, "Magma "+value);
     	}else if(key == 5) {
-    		newCube = new Cube(key, "Obsidian");
+    		hashTable.insert(key, "Obsidian "+value);
     	}else if(key == 6) {
-    		newCube = new Cube(key, "SouldSand");
+    		hashTable.insert(key, "SouldSand "+value);
     	}else {
-    		newCube = new Cube(key, "StoneBricks");
+    		hashTable.insert(key, "StoneBricks "+value);
     	}
     	
     	//.insert(newCube);
