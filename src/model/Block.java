@@ -5,7 +5,6 @@ import java.util.LinkedList;
 public class Block<K, V> implements Box<K, V>{
 	
 	public static final int MAX_BLOCKS = 64;
-	//private Block<K, V>[] blocks;
 	private LinkedList<Block<K, V>>[] b;
 	private K key;
 	private V value;
@@ -13,7 +12,6 @@ public class Block<K, V> implements Box<K, V>{
 	public Block(K k, V v) {
 		super();
 		b = new LinkedList[MAX_BLOCKS];
-		//blocks = (Block<K, V>[]) new Block[MAX_BLOCKS];
 		for (int i = 0; i < MAX_BLOCKS; i++) {
 			b[i] = null;
 		}
@@ -24,12 +22,11 @@ public class Block<K, V> implements Box<K, V>{
 
 	@Override
 	public K getKey() {
-		// TODO Auto-generated method stub
-		return null;
+		return key;
 	}
 	
 
-	public V getValue(K key) {
+	public V getBlock(K key) {
 		if(key==null) {
 			return null;
 		}
@@ -50,8 +47,8 @@ public class Block<K, V> implements Box<K, V>{
 		return null;
 	}
 	
-	public V search(K key) {
-		V item = getValue(key);
+	public V getValue(K key) {
+		V item = getBlock(key);
 		
 		if(item == null) {
 			return null;
@@ -110,5 +107,10 @@ public class Block<K, V> implements Box<K, V>{
 	
 	public void setKey(K key) {
 		this.key = key;
+	}
+
+	@Override
+	public V getValue() {
+		return value;
 	}
 }
