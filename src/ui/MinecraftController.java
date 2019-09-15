@@ -1,6 +1,7 @@
 package ui;
 
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
@@ -14,6 +15,7 @@ import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
+import model.Block;
 
 public class MinecraftController {
 
@@ -88,12 +90,31 @@ public class MinecraftController {
 
     @FXML
     void nextInventory(ActionEvent event) {
-
+    	
     }
 
     @FXML
     void randomObject(ActionEvent event) {
+    	/*Random r = new Random();
+    	int key = r.nextInt(6)+1;
+    	Block newBlock;
+    	if(key == 1) {
+    		newBlock = new Block(key, "Wood");
+    	}else if(key == 2) {
+    		newBlock = new Block(key, "Glass");
+    	}else if(key == 3) {
+    		newBlock = new Block(key, "Gold");
+    	}else if(key == 4) {
+    		newBlock = new Block(key, "Magma");
+    	}else if(key == 5) {
+    		newBlock = new Block(key, "Obsidian");
+    	}else if(key == 6) {
+    		newBlock = new Block(key, "SouldSand");
+    	}else {
+    		newBlock = new Block(key, "StoneBricks");
+    	}
     	
+    	newBlock.insert(key, newBlock.getValue(key));*/
     }
     
     @FXML
