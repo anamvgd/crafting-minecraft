@@ -26,7 +26,7 @@ public class Block<K, V> implements Box<K, V>{
 	}
 	
 
-	public V getBlock(K key) {
+	public Block<K, V> getBlock(K key) {
 		if(key==null) {
 			return null;
 		}
@@ -40,7 +40,7 @@ public class Block<K, V> implements Box<K, V>{
 		
 		for (Block<K, V> item : items) {
 			if(item.getKey().equals(key)) {
-				return item.getValue(key);
+				return item;
 			}
 		}
 		
@@ -48,12 +48,12 @@ public class Block<K, V> implements Box<K, V>{
 	}
 	
 	public V getValue(K key) {
-		V item = getBlock(key);
+		Block<K, V> item = getBlock(key);
 		
 		if(item == null) {
 			return null;
 		} else {
-			return item;
+			return item.getValue();
 		}
 	}
 	
