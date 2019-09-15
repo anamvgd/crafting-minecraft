@@ -6,8 +6,6 @@ public class Block<K, V> {
 	
 	public static final int MAX_BLOCKS = 64;
 	private LinkedList<Cube<K, V>>[] b;
-	private K key;
-	private V value;
 	
 	
 	

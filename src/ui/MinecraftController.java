@@ -1,8 +1,7 @@
 package ui;
 
 import java.net.URL;
-import java.util.Random;
-import java.util.ResourceBundle;
+import java.util.*;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,6 +15,7 @@ import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import model.Block;
+import model.Cube;
 
 public class MinecraftController {
 
@@ -87,6 +87,10 @@ public class MinecraftController {
 
     @FXML
     private Button random;
+    
+    private Queue queue;
+    
+    private Stack<Block>[] stacks;
 
     @FXML
     void nextInventory(ActionEvent event) {
@@ -95,30 +99,35 @@ public class MinecraftController {
 
     @FXML
     void randomObject(ActionEvent event) {
-    	/*Random r = new Random();
+    	Random r = new Random();
     	int key = r.nextInt(6)+1;
-    	Block newBlock;
+    	Cube newCube;
     	if(key == 1) {
-    		newBlock = new Block(key, "Wood");
+    		newCube = new Cube(key, "Wood");
     	}else if(key == 2) {
-    		newBlock = new Block(key, "Glass");
+    		newCube = new Cube(key, "Glass");
     	}else if(key == 3) {
-    		newBlock = new Block(key, "Gold");
+    		newCube = new Cube(key, "Gold");
     	}else if(key == 4) {
-    		newBlock = new Block(key, "Magma");
+    		newCube = new Cube(key, "Magma");
     	}else if(key == 5) {
-    		newBlock = new Block(key, "Obsidian");
+    		newCube = new Cube(key, "Obsidian");
     	}else if(key == 6) {
-    		newBlock = new Block(key, "SouldSand");
+    		newCube = new Cube(key, "SouldSand");
     	}else {
-    		newBlock = new Block(key, "StoneBricks");
+    		newCube = new Cube(key, "StoneBricks");
     	}
     	
-    	newBlock.insert(key, newBlock.getValue(key));*/
+    	//.insert(newCube);
     }
     
     @FXML
     void initialize() {
+    	
+    	queue = new LinkedList<Stack<Block>>();
+    	
+    	
+    	
     	Image img = new Image("ui/Lucky.png");
         random.setBackground(new Background(new BackgroundImage(img, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(58, 60, false, false, false, true))));
     }
