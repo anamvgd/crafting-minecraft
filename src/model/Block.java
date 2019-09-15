@@ -39,7 +39,7 @@ public class Block<K, V> implements Box<K, V>{
 		}
 		
 		for (Block<K, V> item : items) {
-			if(item.getKey().equals(key)) {
+			if(item.key.equals(key)) {
 				return item;
 			}
 		}
@@ -54,7 +54,7 @@ public class Block<K, V> implements Box<K, V>{
 		if(item == null) {
 			return null;
 		} else {
-			return item.getValue();
+			return item.value;
 		}
 	}
 	
@@ -110,8 +110,5 @@ public class Block<K, V> implements Box<K, V>{
 		this.key = key;
 	}
 
-	@Override
-	public V getValue() {
-		return value;
-	}
+	
 }
