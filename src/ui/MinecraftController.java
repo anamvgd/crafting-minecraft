@@ -93,7 +93,7 @@ public class MinecraftController {
 
     @FXML
     void randomObject(ActionEvent event) {
-
+    	
     }
     
     @FXML
