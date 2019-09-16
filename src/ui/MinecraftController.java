@@ -100,7 +100,80 @@ public class MinecraftController {
 
     @FXML
     void nextInventory(ActionEvent event) {
+    	int inventory = Integer.parseInt(inventoryNumber.getText())+1;
+    	if(inventory > 7) {
+    		inventory = 1;
+    	}
+    	inventoryNumber.setText(inventory+"");
     	
+    	if(inventoryNumber.getText().equals("1")) {
+    		Image img = new Image("ui/Lucky.png");
+    		int completeStacks = stack1.size()/64;
+    		if(completeStacks == 0) {
+    			object0.setImage(img);
+    			quantity0.setText(stack1.size()+"");
+    		}else if(completeStacks > 0) {
+    			object0.setImage(img);
+    			quantity0.setText("64");
+    		}
+    		
+    		if(completeStacks == 1) {
+    			object1.setImage(img);
+    			quantity1.setText(stack1.size()-(64*1) + "");
+    		}else if(completeStacks > 1) {
+    			object1.setImage(img);
+    			quantity1.setText("64");
+    		}
+    		
+    		if(completeStacks == 2) {
+    			object2.setImage(img);
+    			quantity2.setText(stack1.size()-(64*2) + "");
+    		}else if(completeStacks > 2) {
+    			object2.setImage(img);
+    			quantity2.setText("64");
+    		}
+    		
+    		if(completeStacks == 3) {
+    			object3.setImage(img);
+    			quantity3.setText(stack1.size()-(64*3) + "");
+    		}else if(completeStacks > 3) {
+    			object3.setImage(img);
+    			quantity3.setText("64");
+    		}
+    		
+    		if(completeStacks == 4) {
+    			object4.setImage(img);
+    			quantity4.setText(stack1.size()-(64*4) + "");
+    		}else if(completeStacks > 4) {
+    			object4.setImage(img);
+    			quantity4.setText("64");
+    		}
+    		
+    		if(completeStacks == 5) {
+    			object5.setImage(img);
+    			quantity5.setText(stack1.size()-(64*5) + "");
+    		}else if(completeStacks > 4) {
+    			object5.setImage(img);
+    			quantity5.setText("64");
+    		}
+    		
+    		if(completeStacks == 6) {
+    			object6.setImage(img);
+    			quantity6.setText(stack1.size()-(64*6) + "");
+    		}else if(completeStacks > 4) {
+    			object6.setImage(img);
+    			quantity6.setText("64");
+    		}
+    		
+    		if(completeStacks == 7) {
+    			object7.setImage(img);
+    			quantity7.setText(stack1.size()-(64*7) + "");
+    		}else if(completeStacks > 4) {
+    			object7.setImage(img);
+    			quantity7.setText("64");
+    		}
+    		
+    	}
     }
 
     @FXML
@@ -148,7 +221,6 @@ public class MinecraftController {
     		
     	}
     	
-    	//.insert(newCube);
     }
     
     @FXML
