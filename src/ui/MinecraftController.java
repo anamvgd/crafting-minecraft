@@ -88,6 +88,8 @@ public class MinecraftController {
     @FXML
     private Button random;
     
+    private String path;
+    
     private Queue<Stack<Cube<Integer, String>>> queue;
     
     private Stack<Cube<Integer, String>> stack1;
@@ -100,79 +102,112 @@ public class MinecraftController {
 
     @FXML
     void nextInventory(ActionEvent event) {
+
     	int inventory = Integer.parseInt(inventoryNumber.getText())+1;
     	if(inventory > 7) {
     		inventory = 1;
     	}
     	inventoryNumber.setText(inventory+"");
     	
+    	if(inventory == 1) {
+    		path = "ui/Wood.png";
+    	}else if(inventory == 2) {
+    		path = "ui/Glass.png";
+    	}else if(inventory == 3) {
+    		path = "ui/Magma.gif";
+    	}else if(inventory == 4) {
+    		path = "ui/Obsidian.png";
+    	}else if(inventory == 5) {
+    		path = "ui/SoulSand.png";
+    	}else if(inventory == 6) {
+    		path = "ui/StoneBricks.png";
+    	}else {
+    		path = "ui/Gold.png";
+    	}
+    	
     	Stack<Cube<Integer, String>> currentStack = queue.poll();
     	queue.offer(currentStack);
     	
-    		Image img = new Image("ui/Lucky.png");
+    		Image img = new Image(path);
     		int completeStacks = currentStack.size()/64;
     		if(completeStacks == 0) {
     			object0.setImage(img);
     			quantity0.setText(currentStack.size()+"");
+    			quantity0.setVisible(true);
     		}else if(completeStacks > 0) {
     			object0.setImage(img);
     			quantity0.setText("64");
+    			quantity0.setVisible(true);
     		}
     		
     		if(completeStacks == 1) {
     			object1.setImage(img);
     			quantity1.setText(currentStack.size()-(64*1) + "");
+    			quantity1.setVisible(true);
     		}else if(completeStacks > 1) {
     			object1.setImage(img);
     			quantity1.setText("64");
+    			quantity1.setVisible(true);
     		}
     		
     		if(completeStacks == 2) {
     			object2.setImage(img);
     			quantity2.setText(currentStack.size()-(64*2) + "");
+    			quantity2.setVisible(true);
     		}else if(completeStacks > 2) {
     			object2.setImage(img);
     			quantity2.setText("64");
+    			quantity2.setVisible(true);
     		}
     		
     		if(completeStacks == 3) {
     			object3.setImage(img);
     			quantity3.setText(currentStack.size()-(64*3) + "");
+    			quantity3.setVisible(true);
     		}else if(completeStacks > 3) {
     			object3.setImage(img);
     			quantity3.setText("64");
+    			quantity3.setVisible(true);
     		}
     		
     		if(completeStacks == 4) {
     			object4.setImage(img);
     			quantity4.setText(currentStack.size()-(64*4) + "");
+    			quantity4.setVisible(true);
     		}else if(completeStacks > 4) {
     			object4.setImage(img);
     			quantity4.setText("64");
+    			quantity4.setVisible(true);
     		}
     		
     		if(completeStacks == 5) {
     			object5.setImage(img);
     			quantity5.setText(currentStack.size()-(64*5) + "");
+    			quantity5.setVisible(true);
     		}else if(completeStacks > 4) {
     			object5.setImage(img);
     			quantity5.setText("64");
+    			quantity5.setVisible(true);
     		}
     		
     		if(completeStacks == 6) {
     			object6.setImage(img);
     			quantity6.setText(currentStack.size()-(64*6) + "");
+    			quantity6.setVisible(true);
     		}else if(completeStacks > 4) {
     			object6.setImage(img);
     			quantity6.setText("64");
+    			quantity6.setVisible(true);
     		}
     		
     		if(completeStacks == 7) {
     			object7.setImage(img);
     			quantity7.setText(currentStack.size()-(64*7) + "");
+    			quantity7.setVisible(true);
     		}else if(completeStacks > 4) {
     			object7.setImage(img);
     			quantity7.setText("64");
+    			quantity7.setVisible(true);
     		}
     		
     }
@@ -243,6 +278,9 @@ public class MinecraftController {
     	queue.offer(stack5);
     	queue.offer(stack6);
     	queue.offer(stack7);
+    	
+    	nextInventory.setDisable(false);
+    	
     	
     	
     	Image img = new Image("ui/Lucky.png");

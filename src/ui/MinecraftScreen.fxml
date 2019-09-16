@@ -38,12 +38,8 @@
                         <Image url="@../../docs/Images/Inventory.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="object0" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../docs/Images/Wood.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="quantity0" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE">
+                  <ImageView fx:id="object0" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="quantity0" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE" visible="false">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -57,12 +53,8 @@
                         <Image url="@../../docs/Images/Inventory.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="object1" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../docs/Images/Wood.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="quantity1" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE">
+                  <ImageView fx:id="object1" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="quantity1" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE" visible="false">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -76,12 +68,8 @@
                         <Image url="@../../docs/Images/Inventory.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="object2" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../docs/Images/Wood.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="quantity2" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE">
+                  <ImageView fx:id="object2" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="quantity2" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE" visible="false">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -95,12 +83,8 @@
                         <Image url="@../../docs/Images/Inventory.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="object3" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../docs/Images/Wood.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="quantity3" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE">
+                  <ImageView fx:id="object3" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="quantity3" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE" visible="false">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -114,12 +98,8 @@
                         <Image url="@../../docs/Images/Inventory.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="object4" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../docs/Images/Wood.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="quantity4" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE">
+                  <ImageView fx:id="object4" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="quantity4" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE" visible="false">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -133,12 +113,8 @@
                         <Image url="@../../docs/Images/Inventory.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="object5" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../docs/Images/Wood.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="quantity5" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE">
+                  <ImageView fx:id="object5" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="quantity5" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE" visible="false">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -152,12 +128,8 @@
                         <Image url="@../../docs/Images/Inventory.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="object6" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../docs/Images/Wood.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="quantity6" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE">
+                  <ImageView fx:id="object6" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="quantity6" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE" visible="false">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -171,12 +143,8 @@
                         <Image url="@../../docs/Images/Inventory.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="object7" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../docs/Images/Wood.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="quantity7" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE">
+                  <ImageView fx:id="object7" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="quantity7" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE" visible="false">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -190,12 +158,8 @@
                         <Image url="@../../docs/Images/Inventory.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="object8" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../docs/Images/Wood.png" />
-                     </image>
-                  </ImageView>
-                  <Label fx:id="quantity8" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE">
+                  <ImageView fx:id="object8" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="quantity8" layoutX="27.0" layoutY="29.0" text="64" textFill="WHITE" visible="false">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -214,7 +178,7 @@
                         <Font name="System Bold" size="36.0" />
                      </font>
                   </Label>
-                  <Button fx:id="nextInventory" layoutX="3.0" layoutY="3.0" mnemonicParsing="false" onAction="#nextInventory" prefHeight="53.0" prefWidth="52.0" text="." visible="false" />
+                  <Button fx:id="nextInventory" layoutX="3.0" layoutY="3.0" mnemonicParsing="false" onAction="#nextInventory" opacity="0.0" prefHeight="53.0" prefWidth="52.0" text="." />
                </children>
             </Pane>
          </children>
