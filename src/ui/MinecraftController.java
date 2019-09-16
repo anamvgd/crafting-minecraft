@@ -113,18 +113,39 @@ public class MinecraftController {
     	
     	if(key == 1) {
     		hashTable.insert(key, "Wood "+value);
+    		Cube<Integer, String> cube = new Cube<>(key, "Wood "+value);
+    		stack1.push(cube);
+    		
     	}else if(key == 2) {
     		hashTable.insert(key, "Glass "+value);
+    		Cube<Integer, String> cube = new Cube<>(key, "Glass "+value);
+    		stack2.push(cube);
+    		
     	}else if(key == 3) {
     		hashTable.insert(key, "Gold "+value);
+    		Cube<Integer, String> cube = new Cube<>(key, "Gold "+value);
+    		stack3.push(cube);
+    		
     	}else if(key == 4) {
     		hashTable.insert(key, "Magma "+value);
+    		Cube<Integer, String> cube = new Cube<>(key, "Magma "+value);
+    		stack4.push(cube);
+    		
     	}else if(key == 5) {
     		hashTable.insert(key, "Obsidian "+value);
+    		Cube<Integer, String> cube = new Cube<>(key, "Obsidian "+value);
+    		stack5.push(cube);
+    		
     	}else if(key == 6) {
     		hashTable.insert(key, "SouldSand "+value);
+    		Cube<Integer, String> cube = new Cube<>(key, "SouldSand "+value);
+    		stack6.push(cube);
+    		
     	}else {
     		hashTable.insert(key, "StoneBricks "+value);
+    		Cube<Integer, String> cube = new Cube<>(key, "StoneBricks "+value);
+    		stack7.push(cube);
+    		
     	}
     	
     	//.insert(newCube);
