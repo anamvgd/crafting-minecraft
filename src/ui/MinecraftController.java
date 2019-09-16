@@ -106,12 +106,14 @@ public class MinecraftController {
     	}
     	inventoryNumber.setText(inventory+"");
     	
-    	if(inventoryNumber.getText().equals("1")) {
+    	Stack<Cube<Integer, String>> currentStack = queue.poll();
+    	queue.offer(currentStack);
+    	
     		Image img = new Image("ui/Lucky.png");
-    		int completeStacks = stack1.size()/64;
+    		int completeStacks = currentStack.size()/64;
     		if(completeStacks == 0) {
     			object0.setImage(img);
-    			quantity0.setText(stack1.size()+"");
+    			quantity0.setText(currentStack.size()+"");
     		}else if(completeStacks > 0) {
     			object0.setImage(img);
     			quantity0.setText("64");
@@ -119,7 +121,7 @@ public class MinecraftController {
     		
     		if(completeStacks == 1) {
     			object1.setImage(img);
-    			quantity1.setText(stack1.size()-(64*1) + "");
+    			quantity1.setText(currentStack.size()-(64*1) + "");
     		}else if(completeStacks > 1) {
     			object1.setImage(img);
     			quantity1.setText("64");
@@ -127,7 +129,7 @@ public class MinecraftController {
     		
     		if(completeStacks == 2) {
     			object2.setImage(img);
-    			quantity2.setText(stack1.size()-(64*2) + "");
+    			quantity2.setText(currentStack.size()-(64*2) + "");
     		}else if(completeStacks > 2) {
     			object2.setImage(img);
     			quantity2.setText("64");
@@ -135,7 +137,7 @@ public class MinecraftController {
     		
     		if(completeStacks == 3) {
     			object3.setImage(img);
-    			quantity3.setText(stack1.size()-(64*3) + "");
+    			quantity3.setText(currentStack.size()-(64*3) + "");
     		}else if(completeStacks > 3) {
     			object3.setImage(img);
     			quantity3.setText("64");
@@ -143,7 +145,7 @@ public class MinecraftController {
     		
     		if(completeStacks == 4) {
     			object4.setImage(img);
-    			quantity4.setText(stack1.size()-(64*4) + "");
+    			quantity4.setText(currentStack.size()-(64*4) + "");
     		}else if(completeStacks > 4) {
     			object4.setImage(img);
     			quantity4.setText("64");
@@ -151,7 +153,7 @@ public class MinecraftController {
     		
     		if(completeStacks == 5) {
     			object5.setImage(img);
-    			quantity5.setText(stack1.size()-(64*5) + "");
+    			quantity5.setText(currentStack.size()-(64*5) + "");
     		}else if(completeStacks > 4) {
     			object5.setImage(img);
     			quantity5.setText("64");
@@ -159,7 +161,7 @@ public class MinecraftController {
     		
     		if(completeStacks == 6) {
     			object6.setImage(img);
-    			quantity6.setText(stack1.size()-(64*6) + "");
+    			quantity6.setText(currentStack.size()-(64*6) + "");
     		}else if(completeStacks > 4) {
     			object6.setImage(img);
     			quantity6.setText("64");
@@ -167,13 +169,12 @@ public class MinecraftController {
     		
     		if(completeStacks == 7) {
     			object7.setImage(img);
-    			quantity7.setText(stack1.size()-(64*7) + "");
+    			quantity7.setText(currentStack.size()-(64*7) + "");
     		}else if(completeStacks > 4) {
     			object7.setImage(img);
     			quantity7.setText("64");
     		}
     		
-    	}
     }
 
     @FXML
