@@ -2,7 +2,8 @@ package model;
 
 public interface Box<K, V> {
 	
-	public K getKey();
-	public V getValue();
+	public void delete(K key);
+	public void insert(K key, V value);
+	public V getValue(K key);
 
 }

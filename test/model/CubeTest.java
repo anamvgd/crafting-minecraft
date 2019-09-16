@@ -6,12 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class CubeTest<K,V> implements Box<K,V>{
+class CubeTest<K,V>{
 
 	private K key;
 	private V value;
 	
-	private Cube<K,V> c;
+	private Cube<Integer, String> c;
 	
 	public void setUp1() {
 		
@@ -20,14 +20,14 @@ class CubeTest<K,V> implements Box<K,V>{
 	@Test
 	void testConstructor() {
 		setUp1();
-		c= new Cube(4,"Iron");
+		c= new Cube<Integer, String>(4,"Iron");
 		 assertNotNull("the new battle field is null", c);	   
 	}
 
 	@Test
 	void testGetkey() {
 		setUp1();
-		c= new Cube(4,"Iron");
+		c= new Cube<Integer, String>(4,"Iron");
 		Integer num=4;
 		assertTrue("The key has the wrong value", num==c.getKey());
 	}
@@ -35,7 +35,7 @@ class CubeTest<K,V> implements Box<K,V>{
 	@Test
 	void testGetValue() {
 		setUp1();
-		c= new Cube(4,"Iron");
+		c= new Cube<Integer, String>(4,"Iron");
 		String valu="Iron";
 		assertTrue("The value has the wrong statement", valu.equals(c.getValue()));
 	}
@@ -43,8 +43,8 @@ class CubeTest<K,V> implements Box<K,V>{
 	@Test
 	void testSetValue() {
 		setUp1();
-		c= new Cube(4,"Iron");
-		V n=(V) "Gold";
+		c= new Cube<Integer, String>(4,"Iron");
+		String n= "Gold";
 		c.setValue(n);
 		assertTrue("The value has the wrong statement", c.getValue().equals("Gold"));
 	}
@@ -52,20 +52,12 @@ class CubeTest<K,V> implements Box<K,V>{
 	@Test
 	void testSetKey() {
 		setUp1();
-		c= new Cube(4,"Iron");
+		c= new Cube<Integer, String>(4,"Iron");
 		Integer k=3;
-		c.setKey((K) k);
+		c.setKey(k);
 		assertTrue("The key has the wrong value", c.getKey().equals(3));
 	}
 	
-	@Override
-	public K getKey() {
-		return null;
-	}
 
-	@Override
-	public V getValue() {
-		return null;
-	}
 
 }

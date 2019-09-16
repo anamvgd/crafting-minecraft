@@ -1,6 +1,6 @@
 package model;
 
-public class Cube<K, V> implements Box<K, V>{
+public class Cube<K, V>{
 	
 	private K key;
 	private V value;

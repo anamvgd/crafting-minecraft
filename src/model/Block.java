@@ -2,7 +2,7 @@ package model;
 
 import java.util.LinkedList;
 
-public class Block<K, V> {
+public class Block<K, V> implements Box<K, V>{
 	
 	public static final int MAX_BLOCKS = 64;
 	private LinkedList<Cube<K, V>>[] b;

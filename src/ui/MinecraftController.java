@@ -248,7 +248,7 @@ public class MinecraftController {
     @FXML
     void randomObject(ActionEvent event) {
     	Random r = new Random();
-    	int key = r.nextInt(6)+1;
+    	int key = r.nextInt(7)+1;
     	int value = r.nextInt(2000)+1;
     	
     	Block<Integer, String> hashTable = new Block<Integer, String>();
