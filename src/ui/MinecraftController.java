@@ -88,9 +88,15 @@ public class MinecraftController {
     @FXML
     private Button random;
     
-    private Queue queue;
+    private Queue<Stack<Cube<Integer, String>>> queue;
     
-    private Stack<Block>[] stacks;
+    private Stack<Cube<Integer, String>> stack1;
+    private Stack<Cube<Integer, String>> stack2;
+    private Stack<Cube<Integer, String>> stack3;
+    private Stack<Cube<Integer, String>> stack4;
+    private Stack<Cube<Integer, String>> stack5;
+    private Stack<Cube<Integer, String>> stack6;
+    private Stack<Cube<Integer, String>> stack7;
 
     @FXML
     void nextInventory(ActionEvent event) {
@@ -127,8 +133,22 @@ public class MinecraftController {
     @FXML
     void initialize() {
     	
-    	queue = new LinkedList<Stack<Block>>();
+    	stack1 = new Stack<Cube<Integer,String>>();
+    	stack2 = new Stack<Cube<Integer,String>>();
+    	stack3 = new Stack<Cube<Integer,String>>();
+    	stack4 = new Stack<Cube<Integer,String>>();
+    	stack5 = new Stack<Cube<Integer,String>>();
+    	stack6 = new Stack<Cube<Integer,String>>();
+    	stack7 = new Stack<Cube<Integer,String>>();
     	
+    	queue = new LinkedList<Stack<Cube<Integer, String>>>();
+    	queue.offer(stack1);
+    	queue.offer(stack2);
+    	queue.offer(stack3);
+    	queue.offer(stack4);
+    	queue.offer(stack5);
+    	queue.offer(stack6);
+    	queue.offer(stack7);
     	
     	
     	Image img = new Image("ui/Lucky.png");
