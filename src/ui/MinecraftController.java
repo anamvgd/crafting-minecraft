@@ -102,6 +102,23 @@ public class MinecraftController {
 
     @FXML
     void nextInventory(ActionEvent event) {
+    	
+    	object0.setVisible(false);
+    	quantity0.setVisible(false);
+    	object1.setVisible(false);
+    	quantity1.setVisible(false);
+    	object2.setVisible(false);
+    	quantity2.setVisible(false);
+    	object3.setVisible(false);
+    	quantity3.setVisible(false);
+    	object4.setVisible(false);
+    	quantity4.setVisible(false);
+    	object5.setVisible(false);
+    	quantity5.setVisible(false);
+    	object6.setVisible(false);
+    	quantity6.setVisible(false);
+    	object7.setVisible(false);
+    	quantity7.setVisible(false);
 
     	int inventory = Integer.parseInt(inventoryNumber.getText())+1;
     	if(inventory > 7) {
@@ -132,80 +149,96 @@ public class MinecraftController {
     		int completeStacks = currentStack.size()/64;
     		if(completeStacks == 0) {
     			object0.setImage(img);
+    			object0.setVisible(true);
     			quantity0.setText(currentStack.size()+"");
     			quantity0.setVisible(true);
     		}else if(completeStacks > 0) {
     			object0.setImage(img);
+    			object0.setVisible(true);
     			quantity0.setText("64");
     			quantity0.setVisible(true);
     		}
     		
     		if(completeStacks == 1) {
     			object1.setImage(img);
+    			object1.setVisible(true);
     			quantity1.setText(currentStack.size()-(64*1) + "");
     			quantity1.setVisible(true);
     		}else if(completeStacks > 1) {
     			object1.setImage(img);
+    			object1.setVisible(true);
     			quantity1.setText("64");
     			quantity1.setVisible(true);
     		}
     		
     		if(completeStacks == 2) {
     			object2.setImage(img);
+    			object2.setVisible(true);
     			quantity2.setText(currentStack.size()-(64*2) + "");
     			quantity2.setVisible(true);
     		}else if(completeStacks > 2) {
     			object2.setImage(img);
+    			object2.setVisible(true);
     			quantity2.setText("64");
     			quantity2.setVisible(true);
     		}
     		
     		if(completeStacks == 3) {
     			object3.setImage(img);
+    			object3.setVisible(true);
     			quantity3.setText(currentStack.size()-(64*3) + "");
     			quantity3.setVisible(true);
     		}else if(completeStacks > 3) {
     			object3.setImage(img);
+    			object3.setVisible(true);
     			quantity3.setText("64");
     			quantity3.setVisible(true);
     		}
     		
     		if(completeStacks == 4) {
     			object4.setImage(img);
+    			object4.setVisible(true);
     			quantity4.setText(currentStack.size()-(64*4) + "");
     			quantity4.setVisible(true);
     		}else if(completeStacks > 4) {
     			object4.setImage(img);
+    			object4.setVisible(true);
     			quantity4.setText("64");
     			quantity4.setVisible(true);
     		}
     		
     		if(completeStacks == 5) {
     			object5.setImage(img);
+    			object5.setVisible(true);
     			quantity5.setText(currentStack.size()-(64*5) + "");
     			quantity5.setVisible(true);
-    		}else if(completeStacks > 4) {
+    		}else if(completeStacks > 5) {
     			object5.setImage(img);
+    			object5.setVisible(true);
     			quantity5.setText("64");
     			quantity5.setVisible(true);
     		}
     		
     		if(completeStacks == 6) {
     			object6.setImage(img);
+    			object6.setVisible(true);
     			quantity6.setText(currentStack.size()-(64*6) + "");
     			quantity6.setVisible(true);
-    		}else if(completeStacks > 4) {
+    		}else if(completeStacks > 6) {
     			object6.setImage(img);
+    			object6.setVisible(true);
     			quantity6.setText("64");
     			quantity6.setVisible(true);
     		}
     		
     		if(completeStacks == 7) {
     			object7.setImage(img);
+    			object7.setVisible(true);
     			quantity7.setText(currentStack.size()-(64*7) + "");
     			quantity7.setVisible(true);
-    		}else if(completeStacks > 4) {
+    		}else if(completeStacks > 7) {
     			object7.setImage(img);
+    			object7.setVisible(true);
     			quantity7.setText("64");
     			quantity7.setVisible(true);
     		}
